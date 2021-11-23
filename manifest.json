@@ -1,0 +1,23 @@
+{
+  "name": "PD Access Token Harvester",
+  "description": "Harvester access tokens for target",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "https://*/*",
+    "webRequest",
+    "http://*/*",
+    "activeTab",
+    "webRequestBlocking",
+    "unlimitedStorage",
+    "storage",
+    "downloads"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
